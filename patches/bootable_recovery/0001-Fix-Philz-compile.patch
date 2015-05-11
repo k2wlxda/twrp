@@ -1,0 +1,25 @@
+From 11df98a468398ac5c20be38c326c9d6b06ec336f Mon Sep 17 00:00:00 2001
+From: Kra1o5 <kra1o5x@gmail.com>
+Date: Sat, 25 Apr 2015 11:26:48 +0200
+Subject: [PATCH] Fix-Philz-compile
+
+---
+ minui/graphics_overlay.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/minui/graphics_overlay.c b/minui/graphics_overlay.c
+index 7e00bc4..f0f1d77 100644
+--- a/minui/graphics_overlay.c
++++ b/minui/graphics_overlay.c
+@@ -161,7 +161,7 @@ int alloc_ion_mem(unsigned int size)
+     ionAllocData.flags = 0;
+     ionAllocData.len = size;
+     ionAllocData.align = sysconf(_SC_PAGESIZE);
+-    ionAllocData.heap_mask =
++    ionAllocData.heap_id_mask =
+             ION_HEAP(ION_IOMMU_HEAP_ID) |
+             ION_HEAP(ION_SYSTEM_CONTIG_HEAP_ID);
+ 
+-- 
+2.3.6
+
