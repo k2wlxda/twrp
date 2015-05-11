@@ -29,7 +29,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/zte/n958st/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/zte/196cb
-TARGET_KERNEL_CONFIG := msm8916-N958X1_defconfig
+TARGET_KERNEL_CONFIG := msm8916-N958X_defconfig
 #TARGET_CUSTOM_KERNEL_HEADERS := device/zte/n958st/include
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
